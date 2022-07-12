@@ -17,7 +17,7 @@ static const char col_gray3[]       = "#dadada";
 //current tag and current window font color
 static const char col_gray4[]       = "#22292b";
 //Top bar second color (blue) and active window border color
-static const char col_cyan[]        = "#67b0e8";
+static const char col_cyan[]        = "#b3b9b8";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -36,6 +36,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+  { "Transmission", NULL,   NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */

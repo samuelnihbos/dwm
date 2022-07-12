@@ -4,7 +4,7 @@
 const unsigned int interval = 1000;
 
 /* text to show if no value can be retrieved */
-static const char unknown_str[] = "fuck no data";
+static const char unknown_str[] = "!!";
 
 /* maximum output string length */
 #define MAXLEN 2048
@@ -66,6 +66,6 @@ static const struct arg args[] = {
         { wifi_perc, "[WIFI  %3s%%]  ", "wlan0" },
 	{ cpu_perc, "[CPU  %s%%]  ", NULL	      },
 	{ ram_perc, "[MEM  %s%%]  ", NULL	      },
-	{ datetime, "%s",           "%a %b %d %r" },
+	{ datetime, "%s",           "%c" },
         { hostname, "  [%s]",           NULL},
 };
